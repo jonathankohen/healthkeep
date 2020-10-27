@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+/* 
+
+primary_blue: #2890B7
+dark_blue: #1e7fa5 
+
+*/
+@import
+	url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+	;
+	
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+	background-color: #2890B7;
+}
+
+.navbar-brand {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	font-family: "Poppins", sans-serif;
+	padding-top: 0;
+	margin-right: 40px;
+}
+
+.navbar-brand:hover {
+	color: #fff;
+}
+
+.nav-link {
+	font-family: "Raleway", sans-serif;
+	color: #ddd;
+	padding: 0;
+	transition: all 0.3s ease 0s;
+	border-bottom: 2px solid #2890B7;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: 0;
+	margin-right: 15px;
+}
+
+.nav-link:hover, .active {
+	color: #fff;
+	border-color: #fff;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.jumbotron {
+	height: 375px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%,
+		rgba(0, 0, 0, 0.6) 100%), url("../images/hero_img.jpg");
+	background-color: #cccccc;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+hr.curly {
+	overflow: visible; 
+	height: 30px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px 0 0 0;
+	border-radius: 20px;
+}
+
+hr.curly:before {
+	display: block;
+	content: "";
+	height: 30px;
+	margin-top: -31px;
+	border-style: solid;
+	border-color: black;
+	border-width: 0 0 1px 0;
+	border-radius: 20px;
+}
+
+.textShadow {
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px
+		rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.textShadowSm {
+	text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.4), 0px 2px 3px
+		rgba(0, 0, 0, 0.1), 0px 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+	font-weight: bold;
+}
+
+.btn-primary {
+	background-color: #2890B7;
+	border-color: #2890B7;
+}
+
+.btn-primary:hover {
+	background-color: #1e7fa5;
+	border-color: #1e7fa5;
+}
+
+.btn-secondary {
+	background-color: #28b796;
+	border-color: #28b796;
+}
+
+.btn-secondary:hover {
+	background-color: #00a780;
+	border-color: #00a780;
+}
+
+.btn-outline-danger {
+	color: #ee6735;
+	border-color: #ee6735;
+}
+
+.btn-outline-danger:hover {
+	background-color: #e06030;
+	border-color: #e06030;
+}
+
+td a {
+	color: #1e7fa5;
+}
+
+td a:hover {
+	color: #44acca;
+}
+
+.copyright {
+	font-size: 14px;
+	color: rgba(255,255,255,.5);
+	transition: all 0.3s ease 0s;
+}
+
+.copyright:hover {
+	color: #fff;
+}
+
+.flip-box {
+	width: 223px;
+	height: 224px;
+	perspective: 1000px;
+}
+
+.flip-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.flip-box-front {
+	background-color: #fff;
+	color: black;
+}
+
+.flip-box-back {
+	color: white;
+	transform: rotateY(180deg);
+}
+
+.card1 {
+	background-color: #2890B7;
+}
+
+.card2 {
+	background-color: #28b796;
+}
+
+.card3 {
+	background-color: #ee6735;
+}
+
+.card4 {
+	background-color: #2890B7;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: red;
+	color: white;
+	text-align: center;
+}
